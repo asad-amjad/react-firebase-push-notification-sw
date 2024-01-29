@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { getToken } from "firebase/messaging";
 
 import "./App.css";
 
@@ -13,7 +14,7 @@ function App() {
     }
   };
 
-  useEffect(() => {}, []);
+  useEffect(() => { }, []);
 
   return <button onClick={() => requestPermission()}>Get Permission</button>;
 }
